@@ -1,12 +1,11 @@
 ---
 layout: default
 ---
-<div class="post">
-<header>
-<h1>Header</h1>
-</header>
-<footer>
-  <p>Footer &copy; 2015</p>
-</footer>
 
-</div>
+
+{% include header.html %}
+<section class ="page-content container">
+  {{content}}
+</section>
+
+{% include footer.html %}

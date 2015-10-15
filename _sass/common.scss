@@ -2,3 +2,43 @@ body{
 font-family: $main-font;
 
 }
+
+body {
+  font-family: $main-font;
+}
+
+nav.navbar-default {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  border-radius: 0;
+
+  .navbar-brand, .navbar-nav>li>a {
+    &, &:hover, &:visited, &:active {
+      color: $light-font-color;
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .navbar-nav>li>a {
+    transition: transform 0.3s ease-in;
+
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+}
+h2{
+  color: $white;
+  font-weight:100;
+  padding:0.5em 0 0.5em 1em;
+
+
+  background: -webkit-linear-gradient(left, $primary-color , $white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, $primary-color, $white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, $primary-color, $white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, $primary-color , $white); /* Standard syntax */
+
+}
