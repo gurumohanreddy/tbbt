@@ -6,5 +6,7 @@ $ ->
     ev.preventDefault()
     $('#episodes aside a.active').removeClass('active')
     $(@).addClass('active')
-    $('#episodes article').addClass('hidden') 
+    $('#episodes article').addClass('hidden')
     $(@.dataset.target).removeClass('hidden')
+
+   $($('#episodes aside a')[0]).click()
